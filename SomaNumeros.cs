@@ -12,7 +12,7 @@ using System;
         while (true)
         {
             numero = int.Parse(Console.ReadLine()); // Lê um número inteiro do usuário
-            if (numero < 0) break; // Se for 0, sai do loop
+            if (numero == 0) break; // Se for 0, sai do loop
             soma += numero; // Adiciona o número à soma
         }
 
