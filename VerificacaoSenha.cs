@@ -1,10 +1,13 @@
+
 using System;
 
  class Program
     {
         public static void Main(string[] args)
         {
-         string senhaCorreta = "1234";
+        	
+        	Console.WriteLine("Digite uma senha");
+        	string senhaCorreta = Console.ReadLine();
             string senhaDigitada;
             int tentativas = 3;
 
@@ -16,6 +19,7 @@ using System;
                 if (senhaDigitada == senhaCorreta)
                 {
                     Console.WriteLine("Acesso permitido!");
+                    Console.ReadKey();
                     return;
                 }
 
@@ -24,6 +28,7 @@ using System;
             }
 
             Console.WriteLine("Acesso bloqueado!");
+            Console.ReadKey();
         }
         
     }
